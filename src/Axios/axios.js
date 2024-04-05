@@ -1,5 +1,5 @@
 import axios from "axios"
 const instance = axios.create({
-    baseURL:"https://taskmanager-api-gf3o.onrender.com"
+    baseURL:"https://taskmanager-api-uces.onrender.com"
 })
 export default instance
