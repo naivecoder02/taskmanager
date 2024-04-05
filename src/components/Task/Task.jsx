@@ -16,7 +16,7 @@ function Task({ task, id }) {
         console.log(task); 
 
         try {
-            const response = await fetch(`http://localhost:8080/api/task/removeTask/${taskId}`, {
+            const response = await fetch(`https://taskmanager-api-uces.onrender.com/api/task/removeTask/${taskId}`, {
                 method: 'GET', // If your server expects a DELETE request, change this to 'DELETE'
                 headers: {
                     // Assuming you're storing your token in localStorage; adjust as necessary
