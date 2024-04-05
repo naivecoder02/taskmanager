@@ -9,7 +9,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const result = await axios.post("/user/login", formData)
+            const result = await axios.post("https://taskmanager-t5cb.onrender.com/user/login", formData)
             tokenDispatch({ type: "SET_TOKEN", payload: result.data.token })
             userDispatch({ type: "SET_USER", payload: result.data.user })
             localStorage.setItem("authToken",result.data.token)
